@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>BigVideo.js - The jQuery Plugin for Big Background Video</title>
+    <meta name="description" content="BigVideo.js - The jQuery Plugin for Big Background Video"/>
+    <meta name="author" content="John Polacek"/>
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:900&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bower_components/BigVideo.js/css/bigvideo.css">
+<style>
+    * { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; *behavior:url(boxsizing.htc); }
+    html, body {
+        margin:0;
+        padding:0;background:#000;
+        line-height:1;
+        font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    h1, h2, .nav-link, .playlist-btn {
+        font-family:'Source Sans Pro', sans-serif; font-weight:900;
+        text-transform:uppercase;
+    }
+    h1 {font-size:48px; }
+    h1, h2, h3, p { margin:0 0 10px; color:#fff; text-shadow: 1px 1px 1px #000;}
+    p { line-height:1.4;  }
+    a { color:#fff; font-style:italic; }
+    blockquote {
+        background:#fff;
+        margin:0 0 20px;
+        padding:5px 20px;
+    }
+    pre {
+        white-space:pre-wrap;       /* css-3 */
+        white-space:-moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space:-pre-wrap;      /* Opera 4-6 */
+        white-space:-o-pre-wrap;    /* Opera 7 */
+        word-wrap:break-word;       /* Internet Explorer 5.5+ */
+    }
+    .box {
+        background:#444; background:rgba(0,0,0,.6);
+        padding:20px;
+        border-radius:5px;
+        margin-bottom:20px;
+    }
+    .nav {
+        position:fixed;
+        top:50px;left:50px;
+        z-index: 999999;
+        width:150px;
+        -webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;
+    }
+    .credit {
+        margin:20px 0;
+    }
+    .download-links { margin-top:20px; }
+    .download { margin-left:10px; padding:5px 10px; color:#fff; background:#111; border-radius:5px; display: inline; }
+    .video-list {
+        list-style:none;
+        margin:0 0 -10px;
+        padding:0;
+        text-align:center;
+    }
+    .video-list li {
+        margin-bottom:10px;
+    }
+    .video-list .playlist-btn {
+        display:block;
+        width:100%;
+    }
+    .main {
+        position:relative;
+        margin:50px 50px 440px 220px;
+        min-width:300px;
+        -webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;
+    }
+    .nav-link {
+        display:block;
+        padding-bottom:10px;
+        text-decoration:none;
+        font-style:normal;
+    }
+    .toggle-btn {
+        position: absolute;
+        bottom: -50px;
+        left: 5px;
+        background:rgba(0,0,0,.8);
+        padding: 6px 12px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: .8em;
+        font-family:'Source Sans Pro', sans-serif; font-weight:900;
+        text-transform: uppercase;
+    }
+    .playlist {
+        padding:0;
+        margin:20px 20px 40px;
+    }
+    .playlist-btn {
+        background:#000;
+        text-decoration:none;
+        font-weight:bold;
+        font-style:normal;
+        text-transform:uppercase;
+        font-size:14px;
+        padding:5px 10px;
+        margin-right:10px;
+        border-radius:5px;
+    }
+    .dimmed {opacity:.7;}
+    .footer-text {
+        padding:0 20px;
+        font-size:.9em;
+        font-style:italic;
+        opacity:.8;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+    }
+
+</style>
+</head>
+<body>
+<div class="main">
+    <div id="overview" class="box">
+        <h1>BigVideo<span class="dimmed"><small>.</small>js</span></h1>
+        <h2>Ambient Video Example</h2>
+        <p>In this example, we are showing a fullscreen background image instead of video for touchscreen devices. Another trick you can do is to use the forceAutoplay setting, which will start playing a video as soon as a user clicks anywhere on the page (videos will only play on touchscreen devices attached to a user click event)</p>
+        <a href="videos/comp_1_hd.mp4" class="skip-video">Video 1</a>
+        <a href="videos/comp_2_hd.mp4" class="skip-video">Video 2</a>
+        <a href="videos/comp_3_hd.mp4" class="skip-video">Video 3</a>
+    </div>
+</div>
+
+<!-- BigVideo Dependencies -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="//vjs.zencdn.net/4.3/video.js"></script>
+
+<!-- BigVideo -->
+<script src="bower_components/BigVideo.js/lib/bigvideo.js"></script>
+
+<!-- Demo -->
+<script>
+
+    $(document).ready(function () {
+        var seekTime=0;
+        var BV = new $.BigVideo();
+        BV.init();
+        BV.show("videos/comp_3_hd.mp4",{ambient:true});
+
+
+        $("#big-video-wrap").click(function () {
+        })
+        // Playlist button click starts video, enables autohiding
+        $('.skip-video').on('click', function(e) {
+            e.preventDefault();
+            seekTime=BV.getPlayer().currentTime();
+            BV.show($(this).attr('href'),{ambient:true});
+
+        })
+        BV.getPlayer().on('loadedmetadata', function() {
+
+            BV.getPlayer().currentTime(seekTime);
+        });
+    })
+</script>
+</body>
+</html>
