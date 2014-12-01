@@ -1,0 +1,317 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(boxsizing.htc); }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  line-height: 1;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: white; }
+
+h1, h2, .nav-link, .playlist-btn {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+.box {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px; }
+
+.nav {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 999999;
+  width: 150px;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition-duration: 0.6s; }
+
+.credit {
+  margin: 20px 0; }
+
+.download-links {
+  margin-top: 20px; }
+
+.download {
+  margin-left: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  background: #111;
+  border-radius: 5px;
+  display: inline; }
+
+.video-list {
+  list-style: none;
+  margin: 0 0 -10px;
+  padding: 0;
+  text-align: center; }
+
+.video-list li {
+  margin-bottom: 10px; }
+
+.video-list .playlist-btn {
+  display: block;
+  width: 100%; }
+
+.min-col {
+  position: relative;
+  z-index: 99999;
+  width: 20%;
+  height: 100%; }
+  .min-col .wrapper-box:after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: skew(0deg, -5deg);
+    width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white; }
+  .min-col .wrapper-box {
+    height: 150px;
+    position: relative;
+    text-align: center;
+    width: 70%;
+    padding: 5%;
+    background: none;
+    margin: 0 auto;
+    margin-top: 25%; }
+  .min-col .wrapper-box-small:after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: skew(0deg, -5deg);
+    width: 100%;
+    border-top: 1px solid orangered;
+    border-bottom: 1px solid orangered; }
+  .min-col .wrapper-box-small {
+    position: relative;
+    text-align: center;
+    width: 70%;
+    padding: 5%;
+    background: none;
+    margin: 0 auto;
+    margin-top: 25%;
+    height: 50px; }
+  .min-col .box:after {
+    background: none repeat scroll 0 0 black;
+    opacity: 0.3;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: skew(0deg, -5deg);
+    width: 100%; }
+  .min-col .box {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background: none; }
+  .min-col .box-orange:after {
+    background: none repeat scroll 0 0 orangered;
+    opacity: 0.3;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: skew(0deg, -5deg);
+    width: 100%; }
+  .min-col .box-orange {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background: none; }
+
+.col {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  float: left; }
+
+.nav-link {
+  display: block;
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-style: normal; }
+
+.toggle-btn {
+  position: absolute;
+  bottom: -50px;
+  left: 5px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 6px 12px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: .8em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+.playlist {
+  padding: 0;
+  margin: 20px 20px 40px; }
+
+.playlist-btn {
+  background: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px; }
+
+.dimmed {
+  opacity: .7; }
+
+.footer-text {
+  padding: 0 20px;
+  font-size: .9em;
+  font-style: italic;
+  opacity: .8;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
+
+header {
+  width: 100%;
+  float: left;
+  height: 100px;
+  position: relative;
+  background: white; }
+  header .content-wrapper {
+    margin: 0 auto;
+    padding: 0; }
+    header .content-wrapper .contenuto {
+      float: right;
+      padding: 0;
+      width: 70%; }
+
+footer {
+  width: 100%;
+  float: left;
+  height: 40px;
+  position: relative;
+  background: white; }
+
+.content {
+  width: 100%;
+  heigth: 100%;
+  float: left;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.subcolumn {
+  width: 90%;
+  bottom: 0;
+  height: 150px;
+  position: absolute;
+  z-index: 99999;
+  opacity: 0.5; }
+  .subcolumn .content-wrapper {
+    margin: 0 auto;
+    padding: 0; }
+    .subcolumn .content-wrapper .contenuto {
+      margin: 0 auto;
+      padding: 0;
+      width: 100%; }
+
+#video-container {
+  heigth: 100%;
+  background: grey;
+  height: 450px;
+  position: relative;
+  z-index: 2; }
+
+.content {
+  width: 100%;
+  height: 500px;
+  position: relative; }
+
+.video-js {
+  width: 90%;
+  height: 100%;
+  position: absolute; }
+
+.timeline {
+  width: 65%;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+  height: 114px; }
+
+.month {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  float: left;
+  margin-left: 12%; }
+  .month .number {
+    width: 100%;
+    height: 1px;
+    background: white;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .month .triangle {
+    border-bottom: 7px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    margin: 0 auto;
+    width: 0; }
+  .month .image {
+    opacity: 0.4;
+    background: black;
+    width: 90%;
+    height: 80px;
+    margin: 0 auto; }
+
+.month-selected {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: transparent transparent orangered;
+  border-image: none;
+  border-style: solid;
+  border-width: 20px;
+  float: left;
+  height: 0;
+  position: relative;
+  top: 76px;
+  width: 0; }
+
+.month-selected:after {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: orangered transparent transparent;
+  border-image: none;
+  border-right: 20px solid transparent;
+  border-style: solid;
+  border-width: 20px;
+  content: "";
+  height: 0;
+  left: -19px;
+  opacity: 1;
+  position: absolute;
+  top: 18px;
+  width: 0; }
+
+/*# sourceMappingURL=style.css.map */
