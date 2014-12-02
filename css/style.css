@@ -328,4 +328,22 @@ footer {
   top: 18px;
   width: 0; }
 
+.text-intro {
+  width: 100%;
+  font-size: 30px;
+  position: absolute;
+  z-index: 999999;
+  margin: 0 auto;
+  text-align: center; }
+
+.text-intro p {
+  opacity: 0.2;
+  color: white; }
+
+.text-intro p:hover {
+  opacity: 1;
+  transition: opacity .15s ease-in-out;
+  -moz-transition: opacity .15s ease-in-out;
+  -webkit-transition: opacity .15s ease-in-out; }
+
 /*# sourceMappingURL=style.css.map */
