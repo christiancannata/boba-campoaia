@@ -329,19 +329,30 @@ footer {
   width: 0; }
 
 .text-intro {
-  width: 100%;
-  font-size: 30px;
+  width: 90%;
+  color: white;
   position: absolute;
   z-index: 999999;
   margin: 0 auto;
+  opacity: 0.2;
   text-align: center; }
 
+.text-intro:hover {
+  opacity: 1; }
+
 .text-intro p {
-  opacity: 0.2;
-  color: white; }
+  margin: 0 auto;
+  width: 40%;
+  color: white;
+  font-size: 3em;
+  margin-top: 20px;
+  transform: skew(0deg, -3deg);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 .text-intro p:hover {
-  opacity: 1;
   transition: opacity .15s ease-in-out;
   -moz-transition: opacity .15s ease-in-out;
   -webkit-transition: opacity .15s ease-in-out; }
