@@ -10,7 +10,9 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:900&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ'
           rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
-
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="bower_components/magnific-popup/dist/magnific-popup.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 <body>
@@ -19,7 +21,11 @@
 <header>
     <div class="content-wrapper">
         <div class="contenuto">
-            <div class="menu">menu</div>
+           <div class="menu">
+               <a href="#menu" ><i class="fa fa-bars fa-2x"></i>
+               </a>
+
+           </div>
             <div class="logo">
                 <h1>Campo all’Aia</h1>
 
@@ -111,10 +117,38 @@
 </div>
 
 <footer>
+<div class="wrapper">
 
+</div>
 </footer>
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+<script language="javascript">
+    $(document).ready(function() {
+        $('.menu a').magnificPopup({
+            type: 'inline',
+            alignTop: true,
+            removalDelay: 300,
+            mainClass: 'mfp-fade'
+        });
+    });
+
+</script>
+
+
+<div id="menu" class="menu-popup mfp-hide">
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+    <div class="box"></div>
+
+</div>
+
 
 
 </body>

@@ -249,14 +249,22 @@ header {
           background: lightgreen; }
       header .content-wrapper .sub-contenuto .mini-box {
         float: left;
-        width: 15%; }
+        width: 15%;
+        border: 1px solid lightgrey;
+        height: 60px; }
 
 footer {
   width: 100%;
   float: left;
-  height: 40px;
   position: relative;
-  background: white; }
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  footer .wrapper {
+    border: 1px solid lightgrey;
+    width: 90%;
+    margin: 0 auto;
+    height: 50px; }
 
 .content {
   width: 100%;
@@ -305,7 +313,7 @@ footer {
 
 .month {
   cursor: pointer;
-  width: 80px;
+  width: 11%;
   text-align: center;
   float: left;
   margin-left: 9%;
@@ -325,7 +333,7 @@ footer {
 
 .month-selected {
   cursor: pointer;
-  width: 80px;
+  width: 11%;
   text-align: center;
   float: left;
   margin-left: 9%;
@@ -350,7 +358,7 @@ footer {
     -o-transform-origin: 0 100%;
     transform-origin: 0 100%;
     background: orangered;
-    margin-left: 41px;
+    margin-left: 50%;
     margin-top: -3px;
     float: left; }
 
@@ -383,18 +391,89 @@ footer {
   padding-bottom: 20px; }
 
 .menu {
-  width: 33%;
-  float: left; }
+  float: left;
+  padding: 1%;
+  width: 31%; }
+  .menu a {
+    color: grey; }
 
 .logo {
+  float: left;
+  position: relative;
   text-align: center;
   width: 33%;
-  float: left; }
+  z-index: 2147483647; }
   .logo h1 {
     margin: 0; }
 
 .social {
   width: 33%;
   float: right; }
+
+.menu-popup {
+  background: none repeat scroll 0 0 transparent;
+  border-top: 1px solid white;
+  height: 100%;
+  margin: 70px auto 0;
+  padding: 50px 20px 20px;
+  position: relative;
+  width: 100%;
+  float: left; }
+
+#menu .box {
+  float: left;
+  padding: 0;
+  margin: 1%;
+  width: 23%;
+  height: 45%; }
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+  height: 100%; }
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+  height: 100%; }
+
+button.mfp-close, button.mfp-arrow {
+  background: none repeat scroll 0 0 transparent;
+  border: 0 none;
+  box-shadow: none;
+  cursor: pointer;
+  display: block;
+  float: left;
+  left: 0;
+  outline: medium none;
+  overflow: visible;
+  padding: 0;
+  z-index: 1046;
+  color: white; }
+
+.mfp-close-btn-in .mfp-close {
+  color: lightgrey; }
 
 /*# sourceMappingURL=style.css.map */
