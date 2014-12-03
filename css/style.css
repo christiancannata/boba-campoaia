@@ -273,6 +273,14 @@ footer {
   padding-left: 5%;
   padding-right: 5%; }
 
+.slideshow-wrapper {
+  width: 100%;
+  heigth: 300px;
+  float: left;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 30px; }
+
 .subcolumn {
   width: 90%;
   bottom: 0;
@@ -297,7 +305,6 @@ footer {
 
 .content {
   width: 100%;
-  height: 500px;
   position: relative; }
 
 .video-js {
@@ -401,8 +408,7 @@ footer {
   float: left;
   position: relative;
   text-align: center;
-  width: 33%;
-  z-index: 2147483647; }
+  width: 33%; }
   .logo h1 {
     margin: 0; }
 
@@ -412,20 +418,28 @@ footer {
 
 .menu-popup {
   background: none repeat scroll 0 0 transparent;
-  border-top: 1px solid white;
   height: 100%;
-  margin: 70px auto 0;
-  padding: 50px 20px 20px;
+  padding: 0px 20px 20px;
   position: relative;
   width: 100%;
   float: left; }
+  .menu-popup .logo-menu {
+    border-bottom: 1px solid white;
+    color: white;
+    float: left;
+    margin: 0 auto 0 1%;
+    padding-bottom: 30px;
+    padding-left: 0;
+    padding-top: 20px;
+    text-align: center;
+    width: 98%; }
 
 #menu .box {
   float: left;
-  padding: 0;
+  height: 39%;
   margin: 1%;
-  width: 23%;
-  height: 45%; }
+  padding: 0;
+  width: 22%; }
 
 /* overlay at start */
 .mfp-fade.mfp-bg {
@@ -474,6 +488,59 @@ button.mfp-close, button.mfp-arrow {
   color: white; }
 
 .mfp-close-btn-in .mfp-close {
-  color: lightgrey; }
+  color: white;
+  font-size: 4em;
+  font-weight: normal;
+  padding: 1% 0 0 4%; }
+
+.corner {
+  background: none repeat scroll 0 0 rgba(232, 112, 88, 0.2);
+  opacity: 1;
+  position: fixed;
+  transition: all 0.3s ease 0s;
+  z-index: 300; }
+
+.corner.corner--right {
+  right: 4%; }
+
+.corner.corner--left, .corner.corner--right {
+  height: calc(86% - 90px);
+  top: calc(7% + 70px);
+  width: 10px; }
+
+.corner.corner--bottom {
+  bottom: calc(7% + 10px);
+  height: 10px;
+  left: calc(4% + 10px);
+  width: calc(92% - 20px); }
+
+.corner.corner--right.out {
+  right: 0; }
+
+.corner.corner--bottom.out {
+  bottom: 0; }
+
+.corner.corner--left.out {
+  left: 0; }
+
+.corner.corner--left {
+  left: 4%; }
+
+.subcontent {
+  float: left;
+  width: 100%;
+  padding-bottom: 40px; }
+  .subcontent .article {
+    background: lightgrey;
+    padding: 1%;
+    float: left;
+    height: 190px;
+    margin-left: 9%;
+    margin-right: 0;
+    width: 21%; }
+    .subcontent .article .content {
+      width: 100%;
+      height: 100%;
+      border: 5px solid grey; }
 
 /*# sourceMappingURL=style.css.map */
