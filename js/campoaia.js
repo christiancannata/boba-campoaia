@@ -26,7 +26,20 @@ JQ(document).ready(function () {
         var corners = JQ('.corner');
         ( JQ(window).scrollTop() > 0 ) ? corners.addClass('out') : corners.removeClass('out');
 
+        //  JQ('.subcontent > div.article:in-viewport').run(function(){
+
+
+        //   });
     });
+
+
+    JQ('.animated').waypoint(function () {
+            JQ(this).addClass("bounceInUp");
+        },
+        {
+            offset: '80%',
+            triggerOnce: true
+        });
 
 
 });
