@@ -168,12 +168,15 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <link href="http://vjs.zencdn.net/4.9/video-js.css" rel="stylesheet">
 <script src="http://vjs.zencdn.net/4.9/video.js"></script>
+<script language="javascript">
+    JQ = jQuery.noConflict();
+</script>
 <script src="js/campoaia.js"></script>
 
 <!-- Demo -->
 <script>
 
-    $(document).ready(function () {
+    JQ(document).ready(function () {
         var seekTime = 0;
         var player = videojs('video', {autoplay: true, controls: false}, function () {
             console.log('Good to go!');

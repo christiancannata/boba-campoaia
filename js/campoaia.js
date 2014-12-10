@@ -4,9 +4,9 @@
 JQ(document).ready(function () {
 
     JQ(".timeline").on('click', '.month', function () {
-        var rel = $(this).attr('rel');
-        var clicked = $(this);
-        var current = $(".timeline .month-selected");
+        var rel = JQ(this).attr('rel');
+        var clicked = JQ(this);
+        var current = JQ(".timeline .month-selected");
 
         var month = current.find(".text").html();
 
@@ -17,7 +17,7 @@ JQ(document).ready(function () {
 
         var nuovo_selected = JQ('<div class="month-selected" rel="' + clicked.attr('rel') + '" number="' + clicked.attr('number') + '"><div class="text">' + clicked.attr('number') + '<br>' + clicked.attr('rel') + ' </div> </div>');
 
-        $(".timeline .month[number=" + clicked.attr('number') + "]").replaceWith(nuovo_selected);
+        JQ(".timeline .month[number=" + clicked.attr('number') + "]").replaceWith(nuovo_selected);
 
     });
 

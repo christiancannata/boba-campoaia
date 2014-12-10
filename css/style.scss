@@ -685,3 +685,87 @@ button.mfp-close, button.mfp-arrow {
 
   }
 }
+.column-left{
+  width:60%;
+  float:left;
+  article{
+    width:100%;
+    float:left;
+    .small{
+      height:50px;
+    }
+
+
+  }
+  article.big{
+      height:450px;
+    background-color:#B58707;
+  }
+  article.medium{
+    height:350px;
+    background-color:#F2CC63;
+
+  }
+  article.small{
+    height:50px;
+  }
+  .padded{
+    padding:3%;
+  }
+
+  .content{
+    width:100%;
+    float:left;
+    border:3px solid grey;
+    height: 100%;
+  }
+
+}
+
+.column-right{
+  width:40%;
+  float:left;
+  article{
+    width:100%;
+    float:left;
+
+
+  }
+  h4.title{
+    background:white;
+    color:grey;
+
+    width:50%;
+    text-align:center;
+    margin:0px 0px 0px 0px;
+    position: absolute;
+    margin-top:-13px;
+    margin-left:20%;
+  }
+  button{
+    background: none repeat scroll 0 0 white;
+    border: 1px solid grey;
+    color: grey;
+    margin: -10px 0 0 20%;
+    position: absolute;
+    text-align: center;
+    width: 50%;
+  }
+  .content{
+    width:100%;
+    float:left;
+    border:3px solid grey;
+  height: 100%;
+  }
+  p{
+    height:150px;
+  }
+  .padded{
+    padding:3%;
+  }
+  .small{
+    width:50%;
+    height: 250px;
+
+  }
+}
