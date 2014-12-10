@@ -8,6 +8,67 @@ $degrees: -2;
 
 }
 
+/* Basic jQuery Slider essential styles */
+ul.bjqs {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: none;
+}
+
+li.bjqs-slide {
+  position: absolute;
+  display: none;
+}
+
+ul.bjqs-controls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+
+ul.bjqs-controls.v-centered li a {
+  position: absolute;
+}
+
+ul.bjqs-controls.v-centered li.bjqs-next a {
+  right: 0;
+}
+
+ul.bjqs-controls.v-centered li.bjqs-prev a {
+  left: 0;
+}
+
+ol.bjqs-markers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+ol.bjqs-markers.h-centered {
+  text-align: center;
+}
+
+ol.bjqs-markers li {
+  display: inline;
+}
+
+ol.bjqs-markers li a {
+  display: inline-block;
+}
+
+p.bjqs-caption {
+  display: block;
+  width: 96%;
+  margin: 0;
+  padding: 2%;
+  position: absolute;
+  bottom: 0;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -672,7 +733,7 @@ button.mfp-close, button.mfp-arrow {
     padding:1%;
 
     float: left;
-    height: 190px;
+    height: 290px;
     margin-left: 9%;
     margin-right: 0;
     width: 21%;
@@ -730,6 +791,12 @@ button.mfp-close, button.mfp-arrow {
     float: left;
 
   }
+  article.medium {
+    height: 350px;
+    background-color: #F2CC63;
+    padding: 0px 0px 0px 0px;
+  }
+
   h4.title {
     background: white;
     color: grey;
@@ -755,6 +822,14 @@ button.mfp-close, button.mfp-arrow {
     float: left;
     border: 3px solid grey;
     height: 100%;
+
+  }
+  .content-no-border {
+    height: 100%;
+
+    width: 100%;
+    float: left;
+    border: 0px 0px 0px 0px;
   }
   p {
     height: 150px;
@@ -766,5 +841,50 @@ button.mfp-close, button.mfp-arrow {
     width: 50%;
     height: 250px;
 
+  }
+}
+
+.bjqs-controls li a {
+  color: orange;
+  border: 1px solid orange;
+  font-weight: bold;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 5px;
+  background: white;
+  padding-bottom: 5px;
+}
+
+.bjqs-prev a {
+  margin-left: -2%;
+
+}
+
+.bjqs-next a {
+  margin-right: -2%;
+
+}
+
+.slideshow-wrapper {
+  .content {
+    padding: 0 0 0 0;
+  }
+  .clearfix {
+    width: 100%;
+    float: left;
+    background: orange;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+header {
+  .month {
+    margin-top: 33px;
+
+  }
+  .month-selected {
+    margin-top: 19px;
   }
 }

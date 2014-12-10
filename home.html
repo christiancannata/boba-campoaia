@@ -20,8 +20,6 @@
 
     <link rel="stylesheet" href="bower_components/magnific-popup/dist/magnific-popup.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- Include the basic styles -->
-    <link type="text/css" rel="Stylesheet" href="bjqs.css"/>
 
 </head>
 <body>
@@ -126,7 +124,7 @@
 
         </article>
 
-        <article class="padded medium">
+        <article class="padded medium" style="   background:lightcoral;">
         </article>
         <article class="padded medium">
             <div class="content">
@@ -153,6 +151,14 @@
         </article>
         <article class="padded small" style="   background:#E4F263;">
             <div class="content">
+            </div>
+        </article>
+        <article class="padded medium" style="   background:lightskyblue;">
+            <div class="content-no-border">
+            </div>
+        </article>
+        <article class="padded medium">
+            <div class="content-no-border" style="background:orange">
             </div>
         </article>
     </div>
@@ -235,54 +241,7 @@
             <li><a href="#"><img src="img/dummy.png" alt="dummy">
 
                 <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
 
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
-            <li><a href="#"><img src="img/dummy.png" alt="dummy">
-
-                <h3>A fantastic title</h3></a></li>
         </ul>
     </section>
 
@@ -294,10 +253,22 @@
         <h3>Moments of boh</h3>
 
     </div>
+    <div class="clearfix"></div>
     <div class="content">
-
+        <div id="slide">
+            <ul class="bjqs">
+                <li><img
+                        src="http://viaggi.corriere.it/methode_image/dove-rcs/foto/foto-articoli/europa/spagna/baleari/palma/palma-spiagge/palma-maiorca-estate-04.jpg?v=201312081131">
+                </li>
+                <li><img
+                        src="http://cdn1.stbm.it/zingarate/gallery/foto/grecia/i-caraibi-in-europa-le-spiagge-piu-belle-d-europa/calo-des-moro-maiorca.jpeg?-3600">
+                </li>
+            </ul>
+        </div>
 
     </div>
+    <div class="clearfix"></div>
+
 </div>
 
 <div class="subcontent">
@@ -343,7 +314,7 @@
 <script src="js/colorfinder-1.1.js"></script>
 <script src="js/gridScrollFx.js"></script>
 <!-- Include the plugin *after* the jQuery library -->
-<script src="bjqs.min.js"></script>
+<script src="js/slideshow.js"></script>
 
 
 <script>
@@ -365,6 +336,15 @@
             alignTop: true,
             removalDelay: 300,
             mainClass: 'mfp-fade'
+        });
+
+        JQ('#slide').bjqs({
+            nexttext: 'Next. >', // Text for 'next' button (can use HTML)
+            prevtext: '< Prev.', // Text for 'previous' button (can use HTML)
+            responsive: true,
+            width: "100%",
+            height: 400,
+            showmarkers: false
         });
     });
 
