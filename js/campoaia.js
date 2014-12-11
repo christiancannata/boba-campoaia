@@ -33,11 +33,13 @@ JQ(document).ready(function () {
     });
 
 
+
     JQ('.animated').waypoint(function () {
-            JQ(this).addClass("bounceInUp");
+
+            JQ(this).delay(800).fadeIn(1000);
         },
         {
-            offset: '80%',
+            offset: '100%',
             triggerOnce: true
         });
 
