@@ -17,27 +17,43 @@
 		</div>
 	</div>
 	<div class="article animated ">
-		<div class="content"></div>
+		<div class="content">
+			Menu1
+		</div>
 	</div>
 	<div class="article animated ">
-		<div class="content"></div>
+		<div class="content">
+			Menu1
+		</div>
 	</div>
 	<div class="article animated ">
-		<div class="content"></div>
+		<div class="content">
+			Menu1
+		</div>
 	</div>
 	<div class="article animated ">
-		<div class="content"></div>
+		<div class="content">
+			Menu1
+		</div>
 	</div>
 	<div class="article animated ">
-		<div class="content"></div>
+		<div class="content">
+			Menu1
+		</div>
 	</div>
 	<div class="article animated ">
-		<div class="content"></div>
+		<div class="content">
+			Menu1
+		</div>
 	</div>
 	<div class="article animated ">
-		<div class="content"></div>
+		<div class="content">
+			Menu1
+		</div>
 	</div>
 	<div class="article animated ">
-		<div class="content"></div>
+		<div class="content">
+			Menu1
+		</div>
 	</div>
 </div>

@@ -65,10 +65,8 @@
 			<div class="content orange-border">
 				<h4 class="title orange"><i><b>Rates & Booking!</b></i></h4>
 
-				<p><i>Maecenas id eleifend ex. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Nullam feugiat nulla eget sodales eleifend. Donec condimentum velit ut elementum maximus. Fusce in
-						dolor felis. Phasellus ac odio id metus vehicula lobortis vel vel metus. Nam facilisis sed ante vel
-						elementum.</i></p>
+				<p><i>Le prenotazioni avvengono su richiesta via mail, attraverso le quali la proprietà di Campo all’Aia comunicherà la disponibilità. Alla prenotazione si accettano bonifici bancari, del 30% alla prenotazione di Campo all’Aia, e del restante all’arrivo presso la casa. La cauzione è sempre di 400,00 € che verranno restituiti alla partenza se non vi siano stati danni gravi.
+						E’ possibile prenotare per 1/2 persone oltre le 7 indicate nell’elenco dei servizi, vi sono infatti all’interno della casa dei bellissimi divano-letto da poter utilizzare come posti letto. Il costo per la presenza di persone oltre le 7 indicate, aumenta di 100,00 € a settimana pp.</i></p>
 
 				<button class="orange-border"><b>Book Now</b></button>
 			</div>
@@ -80,15 +78,37 @@
 <div class="content">
 
 
-	<article class="padded medium text">
-		<h1 class="orange"><b><i>Campo All’Aia, Autumn Season</i></b></h1>
+	<article class="padded medium text autumn">
+		<h1 class="orange"><b><i>Hunting Season</i></b></h1>
+
+		<p class="content-text">
+			Campo all’Aia si predispone per ospitare visitatori che pratichino l’hobby della Caccia. Il territorio è denso di concentramenti e squadre che organizzano battute di Caccia, specialmente al Cinghiale. La selvaggina presente nei territori vicini all’abitazione è estremamente ricca,
+		</p>
+	</article>
+	<article class="padded medium text spring">
+		<h1 class="orange"><b><i>Attività - History</i></b></h1>
 
 		<p class="content-text">
 			Maecenas id eleifend ex. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
 			feugiat nulla eget sodales eleifend. Donec con- dimentum velit ut elementum maximus.
 		</p>
 	</article>
+	<article class="padded medium text winter">
+		<h1 class="orange"><b><i>Attività - Cooking</i></b></h1>
 
+		<p class="content-text">
+			Maecenas id eleifend ex. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			feugiat nulla eget sodales eleifend. Donec con- dimentum velit ut elementum maximus.
+		</p>
+	</article>
+	<article class="padded medium text summer">
+		<h1 class="orange"><b><i>Attività - Sports</i></b></h1>
+
+		<p class="content-text">
+			Maecenas id eleifend ex. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+			feugiat nulla eget sodales eleifend. Donec con- dimentum velit ut elementum maximus.
+		</p>
+	</article>
 
 	<div class="booking-table">
 
@@ -100,7 +120,7 @@
 				<li rel="terms">Terms</li>
 			</ul>
 			<div class="tab-content rates selected">
-				<table>
+				<table class="prices-autumn">
 					<tr>
 						<th style="width:55%">Campo All’Aia</th>
 						<th>Autumn Season</th>
@@ -122,6 +142,80 @@
 						<td><b>1050,00 €</b></td>
 					</tr>
 				</table>
+
+
+				<table class="prices-winter">
+					<tr>
+						<th style="width:55%">Campo All’Aia</th>
+						<th>Autumn Season</th>
+						<th>Autumn Season</th>
+					</tr>
+					<tr>
+						<td class="first" style="width:55%">The Villa ( for week)</td>
+						<td class="first">Until 8 Persons</td>
+						<td class="first"><b>1050,00 €</b></td>
+					</tr>
+					<tr>
+						<td style="width:55%">The Villa ( for week)</td>
+						<td>Until 8 Persons</td>
+						<td><b>1050,00 €</b></td>
+					</tr>
+					<tr>
+						<td style="width:55%">The Villa ( for week)</td>
+						<td>Until 8 Persons</td>
+						<td><b>1050,00 €</b></td>
+					</tr>
+				</table>
+
+
+				<table class="prices-spring">
+					<tr>
+						<th style="width:55%">Campo All’Aia</th>
+						<th>Autumn Season</th>
+						<th>Autumn Season</th>
+					</tr>
+					<tr>
+						<td class="first" style="width:55%">The Villa ( for week)</td>
+						<td class="first">Until 8 Persons</td>
+						<td class="first"><b>1050,00 €</b></td>
+					</tr>
+					<tr>
+						<td style="width:55%">The Villa ( for week)</td>
+						<td>Until 8 Persons</td>
+						<td><b>1050,00 €</b></td>
+					</tr>
+					<tr>
+						<td style="width:55%">The Villa ( for week)</td>
+						<td>Until 8 Persons</td>
+						<td><b>1050,00 €</b></td>
+					</tr>
+				</table>
+
+
+				<table class="prices-summer">
+					<tr>
+						<th style="width:55%">Campo All’Aia</th>
+						<th>Autumn Season</th>
+						<th>Autumn Season</th>
+					</tr>
+					<tr>
+						<td class="first" style="width:55%">The Villa ( for week)</td>
+						<td class="first">Until 8 Persons</td>
+						<td class="first"><b>1050,00 €</b></td>
+					</tr>
+					<tr>
+						<td style="width:55%">The Villa ( for week)</td>
+						<td>Until 8 Persons</td>
+						<td><b>1050,00 €</b></td>
+					</tr>
+					<tr>
+						<td style="width:55%">The Villa ( for week)</td>
+						<td>Until 8 Persons</td>
+						<td><b>1050,00 €</b></td>
+					</tr>
+				</table>
+
+
 				<button class="orange-border"><i>Booking!</i></button>
 			</div>
 
